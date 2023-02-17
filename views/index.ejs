@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Herbs Index</title>
+</head>
+
+<body>
+    <h1>Herbs in Sesali's Cabinet </h1>
+    <ul>
+        <% for (let i=0; i < allHerbs.length; i++) { %>
+            <li>
+                <a href="/herbs/<%=i%>">
+                    <%=allHerbs[i].name%>
+                </a>
+            </li>
+            <% } %>
+    </ul>
+</body>
+
+</html>
